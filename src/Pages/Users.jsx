@@ -34,6 +34,7 @@ const Users = () => {
           2
         </button>
       </div>
+      <div className="container">
       {data.map((item) => (
         <div key={item.id}>
           <img src={item.avatar} alt={item.first_name} />
@@ -41,6 +42,7 @@ const Users = () => {
           <Link to={`/users/${item.id}`}>See More</Link>
         </div>
       ))}
+      </div>
     </div>
   );
 };

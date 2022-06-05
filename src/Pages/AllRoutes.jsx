@@ -17,9 +17,9 @@ export const AllRoutes = () => {
           <Route
             path="/users"
             element={
-              // <PrivateRoute>
+              <PrivateRoute>
                 <Users />
-              // </PrivateRoute>
+              </PrivateRoute>
             }
           />
           <Route
